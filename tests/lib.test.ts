@@ -20,11 +20,15 @@ let accept:string[] = "abc".split('');
 let a = strspn(s,accept);
 console.log(a);*/
 
-//test function *union*
-
+/* //test function *union*
 import {union} from "../lib";
 let s:string[] = "padinton".split('');
 let accept:string[] = "paqefwtdjetyiytjneytjoeyjnejeyj".split('');
-
 let a = union(s,accept);
-console.log(a);
+console.log(a);*/
+
+/*//test function *Last Word*
+import {last_word} from "../lib"; 
+let word:string[] = "alfredo manuel".split('');
+let a = last_word(word);
+console.log(a);*/

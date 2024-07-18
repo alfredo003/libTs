@@ -66,3 +66,31 @@ export function union(s1:string[],s2:string[]):string
     }
     return (seen.join(''));
 }
+export function is_power_of_2(num:number):boolean
+{
+    if(num === 0)
+        return false;
+    return (num & (num - 1)) === 0;
+}
+export function last_word(word:string[]):string
+{
+    let lastWord:string[] = [];
+    let i:number = 0;
+    let j:number = 0;
+    const CODE1:string = String.fromCharCode(33);
+    const CODE2:string = String.fromCharCode(126);
+
+    while(word[i])
+    {
+        if(word[i] === ' ' && word[i+1] >= CODE1 && word[i] <= CODE2)
+            j = i + 1;
+        i++;
+    }
+    while(word[j] >= CODE1 && word[j] <= CODE2)
+    {
+        lastWord[j] = word[j];
+        j++;
+    }
+
+    return (lastWord.join(''));
+}
