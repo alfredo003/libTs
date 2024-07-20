@@ -32,3 +32,11 @@ import {last_word} from "../lib";
 let word:string[] = "alfredo manuel".split('');
 let a = last_word(word);
 console.log(a);*/
+
+/*//test function *Max*
+import {max} from "../lib"; 
+let tab:number[] = [2,8,1,5,7];
+let a = max(tab,5);
+console.log(a);*/
+
+

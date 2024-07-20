@@ -94,3 +94,20 @@ export function last_word(word:string[]):string
 
     return (lastWord.join(''));
 }
+export function max(tab:number[],len:number):number
+{
+    let i:number = 0;
+    let result:number = 0;
+
+    if(len === 0)
+        return (0);
+    result = tab[i];
+    while(len > i)
+    {
+        if(result < tab[i])
+            result = tab[i];
+        i++;
+    }
+    return(result);
+}
+
