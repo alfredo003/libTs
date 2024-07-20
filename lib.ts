@@ -110,4 +110,19 @@ export function max(tab:number[],len:number):number
     }
     return(result);
 }
+export function print_bits(n:number):string
+{
+    let num = n.toString(2);
+     let result:string[] = [];
+     let i:number =0;
+     let paddin:string = "0".repeat(8-num.length);
 
+     num = paddin+num;
+
+     while(i < num.length)
+     {
+        result[i] = num[i];
+        i++;
+     }
+     return (result.join(''));
+}

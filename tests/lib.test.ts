@@ -39,4 +39,8 @@ let tab:number[] = [2,8,1,5,7];
 let a = max(tab,5);
 console.log(a);*/
 
-
+//test function *Print_bits*
+import {print_bits} from "../lib"; 
+let num:number = 42;
+let a = print_bits(num);
+console.log(a);
